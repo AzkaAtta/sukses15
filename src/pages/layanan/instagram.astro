@@ -1,0 +1,94 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Jasa Like, View, Komentar, Followers Instagram Murah & Real',
+  description:
+    'Tingkatkan interaksi akun Instagram Anda dengan jasa like, view, komentar, dan followers yang murah, real, aman, dan berkualitas dari AuraDigital',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    tagline="Layanan Instagram Profesional"
+    title="Tingkatkan Engagement Instagram Secara Aman"
+    subtitle="Optimalkan interaksi akun Instagram Anda dengan layanan terpercaya dari AuraDigital."
+    image={{
+      src: 'https://raw.githubusercontent.com/AzkaAtta/attamaliqattaqi/refs/heads/main/src/assets/images/instagram.webp',
+      alt: 'Jasa Instagram AuraDigital',
+    }}
+  />
+
+  <Features2
+    title="Layanan Instagram Kami"
+    subtitle="Pilih jenis layanan Instagram sesuai kebutuhan Anda"
+    columns={3}
+    items={[
+      {
+        title: 'Jasa Like Instagram',
+        description:
+          '<a href="/layanan/jasa-like-instagram/" class="text-blue-600 hover:underline">Tingkatkan interaksi di postingan Anda dengan like real & cepat.</a>',
+        icon: 'tabler:heart-filled',
+      },
+      {
+        title: 'Jasa View Instagram',
+        description: 'Perbesar jumlah penonton reels atau video Anda dengan view organik.',
+        icon: 'tabler:eye',
+      },
+      {
+        title: 'Jasa Komentar Instagram',
+        description: 'Dapatkan komentar positif dan natural untuk meningkatkan engagement.',
+        icon: 'tabler:message-circle-2',
+      },
+      {
+        title: 'Jasa Followers Instagram',
+        description: 'Perbesar audiens akun dengan followers aktif dan aman.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Jasa Livestreaming Instagram',
+        description: 'Tingkatkan penonton siaran langsung Anda dengan penonton real-time dan interaksi aktif.',
+        icon: 'tabler:live-photo',
+      },
+      {
+        title: 'Jasa Top Komentar Instagram',
+        description: 'Dapatkan komentar Anda tampil di urutan teratas untuk meningkatkan interaksi dan visibilitas.',
+        icon: 'tabler:message-star',
+      },
+      {
+        title: 'Jasa Share Instagram',
+        description: 'Sebarkan konten Anda lebih luas dengan layanan share Instagram untuk menjangkau audiens baru.',
+        icon: 'tabler:share',
+      },
+      {
+        title: 'Jasa Komentar Instagram',
+        description: 'Dapatkan komentar positif dan natural untuk meningkatkan interaksi di postingan Anda.',
+        icon: 'tabler:message-circle-2',
+      },
+      {
+        title: 'Jasa Komentar Livestreaming Instagram',
+        description: 'Tingkatkan interaksi siaran langsung dengan komentar real-time dan aktif.',
+        icon: 'tabler:message-chatbot',
+      },
+      {
+        title: 'Jasa Post to Story Instagram',
+        description:
+          'Promosikan konten Anda dengan menambahkan postingan ke Instagram Story agar lebih banyak audiens yang melihat.',
+        icon: 'tabler:repeat',
+      },
+      {
+        title: 'Jasa FYP Instagram',
+        description:
+          'Buat konten Anda muncul di halaman Explore dan menjangkau lebih banyak audiens dengan layanan FYP Instagram.',
+        icon: 'tabler:trending-up',
+      },
+      {
+        title: 'Jasa KOL / Influencer Instagram',
+        description: 'Promosikan produk Anda melalui KOL dan influencer Instagram untuk menjangkau audiens yang tepat.',
+        icon: 'tabler:user-star',
+      },
+    ]}
+  />
+</Layout>
