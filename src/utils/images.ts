@@ -71,7 +71,9 @@ export const adaptOpenGraphImages = async (
                     };
                 }
 
-                let _image = null; // Baris yang diperbaiki dari 'let _image;' menjadi 'let _image = null;'
+                // INI PERBAIKAN AKHIR YANG BENAR:
+                // Deklarasikan _image dengan tipe yang benar.
+                let _image: ImageMetadata | { src: string; width: number } | undefined | null;
 
                 if (
                     typeof resolvedImage === 'string' &&
